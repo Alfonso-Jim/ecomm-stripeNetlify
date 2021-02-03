@@ -97,8 +97,8 @@ router.post('/cart/products/buy', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: `http://localhost:3000/success`,
-      cancel_url: `http://localhost:3000/cancel`,
+      success_url: `https://ecommappheroku.herokuapp.com/success`,
+      cancel_url: `https://ecommappheroku.herokuapp.com/cancel`,
     });
     res.json({ id: session.id });
 });
