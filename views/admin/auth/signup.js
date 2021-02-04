@@ -7,6 +7,7 @@ module.exports = ({ req, errors }) => {
       <div class="container">
         <div class="columns is-centered">
           <div class=" box column is-one-quarter">
+          <!--
             <form method="POST">
               <h1 class="title has-text-centered">Sign Up</h1>
               <div class="field">
@@ -28,6 +29,7 @@ module.exports = ({ req, errors }) => {
                 <button class="button is-link">Submit</button>
               </div>
             </form>
+            -->
             <a href="/signin">Have an account? <strong>Sign In</strong></a>
           </div>
         </div>

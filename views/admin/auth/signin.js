@@ -23,7 +23,7 @@ module.exports = ({ errors }) => {
                 <button class="button is-link">Submit</button>
               </div>
             </form>
-            <a href="https://alfonso-dev.com/contact/">Need an account? <strong>Request access</strong></a>
+            <a href="https://alfonso-dev.com/contact/">Need an account? <strong>Request access.</strong></a>
           </div>
         </div>
       </div>

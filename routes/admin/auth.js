@@ -13,20 +13,16 @@ router.get('/signup', (req, res) => {
     res.send(signupTemplate({ req }));
 });
 
-
-
 router.post('/signup', [requireEmail, requirePassword, requirePasswordConfirmation], handleErrors(signupTemplate),
-    // Will be used in public repo    
-    // async (req, res) => {
+    async (req, res) => {
 
-    //     const { email, password } = req.body;
-    //     const user = await usersRepo.create({ email, password});
+        const { email, password } = req.body;
+        const user = await usersRepo.create({ email, password});
 
-    //     req.session.userId = user.id;
+        req.session.userId = user.id;
 
-    //     res.redirect('/admin/products');
-        res.redirect('/')
-    // }
+        res.redirect('/admin/products');
+    }
 );
 
 router.get('/signout', (req, res) => {
